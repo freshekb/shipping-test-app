@@ -1,0 +1,13 @@
+{
+  "LIST": "Список",
+  "MAP": "Карта",
+  "SETTINGS": "Настройки",
+  "FREIGHT": "Грузовой",
+  "PASSENGER": "Пассажирский",
+  "SPECIAL": "Специальный",
+  "APPLY": "Применить",
+  "TRANSPORT_TYPE": "Тип Транспорта",
+  "LANGUAGE": "Язык",
+  "LANGUAGE_RU": "Русский",
+  "LANGUAGE_EN": "Английский"
+}

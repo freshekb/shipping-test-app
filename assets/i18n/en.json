@@ -1,0 +1,13 @@
+{
+  "LIST": "List",
+  "MAP": "Map",
+  "SETTINGS": "Settings",
+  "FREIGHT": "Freight",
+  "PASSENGER": "Passenger",
+  "SPECIAL": "Special",
+  "APPLY": "Apply",
+  "TRANSPORT_TYPE": "Transport Type",
+  "LANGUAGE": "Language",
+  "LANGUAGE_RU": "Russian",
+  "LANGUAGE_EN": "English"
+}
