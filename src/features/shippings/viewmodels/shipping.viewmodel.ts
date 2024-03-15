@@ -56,7 +56,6 @@ export const useShippingViewModel = function (): ShippingViewModel {
      */
     const changeTransportType = async (type: TransportType) => {
         try {
-            console.log(['getShipping', type]);
             setTransportType(type);
             await queryClient.invalidateQueries({queryKey: ['getShipping'], refetchType: "all"});
         } catch (e) {

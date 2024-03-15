@@ -45,7 +45,6 @@ export default function FilterComponent() {
             <TouchableHighlight
                 style={styles.apply}
                 onPress={()=>{
-                    console.log({transportType});
                     changeTransportType(transportType);
                 }}
                 underlayColor='#fff'>

@@ -4,7 +4,7 @@ import MapView, {Marker, PROVIDER_GOOGLE} from "react-native-maps";
 import React, {useContext, useEffect, useRef, useState} from "react";
 import styles from "./styles";
 import {getIcon} from "../../../shared/utils/get-icon";
-import {ShippingViewModelContext} from "../viewmodels/shipping.viewmodel";
+import {ShippingViewModelContext, useShippingViewModel} from "../viewmodels/shipping.viewmodel";
 import {useTranslation} from "react-i18next";
 import {TransportType} from "../../../shared/models/TransportModel";
 import * as Linking from "expo-linking";
@@ -18,7 +18,7 @@ export default function DetailsComponent() {
     const {t} = useTranslation();
     const [isMapReady, setMapReady] = useState(false);
     const params = useLocalSearchParams<DetailRouter>();
-    const {getShippingById} = useContext(ShippingViewModelContext);
+    const {getShippingById} = useShippingViewModel();
     const {data: item} = getShippingById(parseInt(params.id.toString()));
 
     useEffect(() => {
@@ -34,7 +34,7 @@ export default function DetailsComponent() {
             })
         }
     }, [isMapReady, item]);
-    
+
     return <View>
         <MapView
             ref={mapRef}
