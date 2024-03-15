@@ -3,7 +3,7 @@ import React from "react";
 import {Drawer} from "expo-router/drawer";
 import {FontAwesome} from "@expo/vector-icons";
 import {Pressable} from "react-native";
-import {Link} from "expo-router";
+import {Link, usePathname} from "expo-router";
 import {useTranslation} from "react-i18next";
 
 import {
@@ -14,8 +14,9 @@ import {
 } from "@react-navigation/native";
 export default function AppLayout() {
     const {t} = useTranslation();
+    const route = usePathname();
     return (
-        
+
         <GestureHandlerRootView style={{flex: 1}}>
             <Drawer>
                 <Drawer.Screen
@@ -23,6 +24,7 @@ export default function AppLayout() {
                     options={{
                         drawerLabel: t('LIST'),
                         title: t('LIST'),
+                        headerShown: !route.includes('details'),
                         drawerIcon: ({color}) => <FontAwesome size={28} name="list" color={color}/>,
                         headerRight: ({tintColor}) => (
                             <Link href="/settings" asChild style={{marginRight:20}}>

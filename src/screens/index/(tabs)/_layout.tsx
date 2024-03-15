@@ -2,10 +2,15 @@ import {FontAwesome} from "@expo/vector-icons";
 import {Tabs} from "expo-router";
 import {useTranslation} from "react-i18next";
 import FilterComponent from "../../../features/shippings/components/filter.component";
+import {
+    ShippingViewModelContext,
+    useShippingViewModel
+} from "../../../features/shippings/viewmodels/shipping.viewmodel";
 
 export default function TabLayout() {
     const {t} = useTranslation();
-    return (<>
+    const model = useShippingViewModel();
+    return (<ShippingViewModelContext.Provider value={model}>
         <FilterComponent/>
         <Tabs screenOptions={{ tabBarActiveTintColor: 'blue' }}>
             <Tabs.Screen
@@ -25,6 +30,6 @@ export default function TabLayout() {
                 }}
             />
         </Tabs>
-        </>
+        </ShippingViewModelContext.Provider>
     );
 }
