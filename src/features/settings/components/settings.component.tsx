@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {Text, View} from "react-native";
+import {View} from "react-native";
 import {useTranslation} from "react-i18next";
 import {useSettingsViewModel} from "../viewmodels/settings.viewmodel";
 import DropDown from "react-native-paper-dropdown";
@@ -27,7 +27,7 @@ export default function SettingsComponent () {
             visible={showDropDown}
             showDropDown={() => setShowDropDown(true)}
             onDismiss={() => setShowDropDown(false)}
-            value={'ru-Ru'}
+            value={data?.language || 'ru-Ru'}
             setValue={changeLanguage}
             list={languageList}
         />

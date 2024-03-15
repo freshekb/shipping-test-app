@@ -19,7 +19,7 @@ export  interface ShippingViewModel {
  * useShippingViewModel - returns settings view model functions
  * -------------------------------------------------------------
  */
-export const useShippingViewModel = (): ShippingViewModel => {
+export const useShippingViewModel = function (): ShippingViewModel {
     const [transportType, setTransportType] = useState(TransportType.NONE);
     // Access the client
     const queryClient = useQueryClient();
@@ -36,7 +36,6 @@ export const useShippingViewModel = (): ShippingViewModel => {
 
     /**
      * getShipping - get shipping list by type
-     * @param type
      */
     const getShipping = () =>
         useQuery<ShippingModel[], Error>(getOptions(transportType));
@@ -76,4 +75,4 @@ export const useShippingViewModel = (): ShippingViewModel => {
     }
 }
 
-export const ShippingViewModelContext = createContext(useShippingViewModel());
+export const ShippingViewModelContext = createContext<ShippingViewModel>({} as ShippingViewModel);

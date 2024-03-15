@@ -27,7 +27,7 @@ export default function AppLayout() {
                         headerShown: !route.includes('details'),
                         drawerIcon: ({color}) => <FontAwesome size={28} name="list" color={color}/>,
                         headerRight: ({tintColor}) => (
-                            <Link href="/settings" asChild style={{marginRight:20}}>
+                            <Link href={"/settings" as never} asChild style={{marginRight:20}}>
                                 <Pressable>
                                     <FontAwesome size={28} name="cog" color={tintColor}/>
                                 </Pressable>

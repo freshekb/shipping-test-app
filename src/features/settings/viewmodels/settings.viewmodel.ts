@@ -20,7 +20,7 @@ export interface SettingsViewModel {
  * useSettingsViewModel - returns settings view model functions
  * -------------------------------------------------------------
  */
-export const useSettingsViewModel = (): SettingsViewModel => {
+export const useSettingsViewModel = function (): SettingsViewModel {
 
     // Access the client
     const queryClient = useQueryClient();
