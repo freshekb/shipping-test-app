@@ -1,5 +1,5 @@
-import {FlatList, Text, View} from "react-native";
-import {ShippingViewModelContext, useShippingViewModel} from "../viewmodels/shipping.viewmodel";
+import {FlatList, Text} from "react-native";
+import {ShippingViewModelContext} from "../viewmodels/shipping.viewmodel";
 import {useTranslation} from "react-i18next";
 import styles from "./styles";
 import {TransportType} from "../../../shared/models/TransportModel";
@@ -10,7 +10,7 @@ import {Link} from "expo-router";
 export default function ListComponent() {
     const {t} = useTranslation();
     const {getShipping} =  useContext(ShippingViewModelContext);
-    const {data, error} = getShipping();
+    const {data} = getShipping();
 
     return (
         <FlatList
@@ -21,7 +21,7 @@ export default function ListComponent() {
                 ({item}) => (<Link href={{
                     pathname:"/details",
                     params: {id:item.id}
-                }} style={styles.listItem} key={item.id}>
+                } as never} style={styles.listItem} key={item.id}>
                     <Text>{`#${item.transport.id}: ${item.driver.name} (${t(`${TransportType[item.transport.type]}`)})`}</Text>
                 </Link>)
         }/>
