@@ -5,10 +5,5 @@ export  default  StyleSheet.create({
         flex: 1,
     },
     picker: {
-        width: 200,
-        height:30,
-        backgroundColor: '#ccc',
-        borderRadius: 15,
-        overflow: "hidden"
     },
 });
