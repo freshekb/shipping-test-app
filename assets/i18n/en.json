@@ -9,5 +9,10 @@
   "TRANSPORT_TYPE": "Transport Type",
   "LANGUAGE": "Language",
   "LANGUAGE_RU": "Russian",
-  "LANGUAGE_EN": "English"
+  "LANGUAGE_EN": "English",
+  "DRIVER_NAME": "Driver Name",
+  "PHONE_NUMBER": "Driver Phone",
+  "CALL": "Call",
+  "WHATSAPP_CHAT": "Write",
+  "DETAILS": "Details"
 }

@@ -9,5 +9,10 @@
   "TRANSPORT_TYPE": "Тип Транспорта",
   "LANGUAGE": "Язык",
   "LANGUAGE_RU": "Русский",
-  "LANGUAGE_EN": "Английский"
+  "LANGUAGE_EN": "Английский",
+  "DRIVER_NAME": "Имя водителя",
+  "PHONE_NUMBER": "Телефон водителя",
+  "CALL": "Позвонить",
+  "WHATSAPP_CHAT": "Написать",
+  "DETAILS": "Детали"
 }

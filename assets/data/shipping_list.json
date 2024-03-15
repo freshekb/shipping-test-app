@@ -1,0 +1,193 @@
+[
+  {
+    "id": 1,
+    "coordinates": {
+      "latitude": 56.81,
+      "longitude": 60.65
+    },
+    "transport": {
+      "id": 1,
+      "name": "Man 1",
+      "type": 1
+    },
+    "driver": {
+      "name": "Татьяна",
+      "phone": "+79226067887"
+    }
+  },
+  {
+    "id": 2,
+    "coordinates": {
+      "latitude": 57.95,
+      "longitude":56.25
+    },
+    "transport": {
+      "id": 2,
+      "name": "Man 2",
+      "type": 2
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 3,
+    "coordinates": {
+      "latitude": 55.14,
+      "longitude":61.39
+    },
+    "transport": {
+      "id": 3,
+      "name": "Man 2",
+      "type": 3
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 4,
+    "coordinates": {
+      "latitude": 57.15,
+      "longitude":65.49
+    },
+    "transport": {
+      "id": 4,
+      "name": "Man 1",
+      "type": 1
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 5,
+    "coordinates": {
+      "latitude": 57.13,
+      "longitude":65.61
+    },
+    "transport": {
+      "id": 5,
+      "name": "Man 2",
+      "type": 2
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 6,
+    "coordinates": {
+      "latitude": 57.11,
+      "longitude":65.6
+    },
+    "transport": {
+      "id": 6,
+      "name": "Man 2",
+      "type": 3
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },{
+  "id": 7,
+  "coordinates": {
+    "latitude": 55.17,
+    "longitude":59.69
+  },
+  "transport": {
+    "id": 7,
+    "name": "Man 1",
+    "type": 1
+  },
+  "driver": {
+    "name": "Danila",
+    "phone": "+7922222222"
+  }
+},
+  {
+    "id": 8,
+    "coordinates": {
+      "latitude": 56.41,
+      "longitude":61.88
+    },
+    "transport": {
+      "id": 8,
+      "name": "Man 2",
+      "type": 2
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 9,
+    "coordinates": {
+      "latitude": 57.91,
+      "longitude":56.16
+    },
+    "transport": {
+      "id": 9,
+      "name": "Man 2",
+      "type": 3
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },{
+  "id": 10,
+  "coordinates": {
+    "latitude": 51.5,
+    "longitude":65.5
+  },
+  "transport": {
+    "id": 10,
+    "name": "Man 1",
+    "type": 1
+  },
+  "driver": {
+    "name": "Danila",
+    "phone": "+7922222222"
+  }
+},
+  {
+    "id": 11,
+    "coordinates": {
+      "latitude": 51.5,
+      "longitude":68.0
+    },
+    "transport": {
+      "id":11,
+      "name": "Man 2",
+      "type": 2
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  },
+  {
+    "id": 12,
+    "coordinates": {
+      "latitude": 55.5,
+      "longitude":63.5
+    },
+    "transport": {
+      "id": 12,
+      "name": "Man 2",
+      "type": 3
+    },
+    "driver": {
+      "name": "Danila",
+      "phone": "+7922222222"
+    }
+  }
+
+]
