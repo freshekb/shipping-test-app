@@ -6,7 +6,7 @@ import {TransportType} from "../../../shared/models/TransportModel";
 import {ImageURISource} from "react-native";
 import {useFocusEffect} from "expo-router";
 import {getIcon} from "../../../shared/utils/get-icon";
-
+import { router } from 'expo-router';
 
 export default function MapComponent () {
     const mapRef = useRef<MapView | null>(null);
@@ -44,7 +44,9 @@ export default function MapComponent () {
         }}
     >
         {data?.map((item, index) => (
-            <Marker key={index} identifier={`transport${index}`} coordinate={item.coordinates} style={{width: 20}}
+            <Marker key={index} identifier={`transport${index}`} coordinate={item.coordinates} style={{width: 20}} onPress={()=>{
+                router.push({pathname:'/details', params: {id: item.id}} as never);
+            }}
                     image={getIcon(item.transport.type)}/>))}
     </MapView>);
 }

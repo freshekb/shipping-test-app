@@ -6,6 +6,6 @@ install jdk 17
 2. to run android  ``npm run android``
 3. to run ios ``npm run ios``
 
-Troubleshoot
+
 
 
